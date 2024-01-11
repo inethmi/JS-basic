@@ -1,0 +1,24 @@
+<script>
+  //factorial of a number is the product of all number from 1 to that number
+
+  //ex:factorial of 5(5!) = 1*2*3*4*5 = 120
+
+  //factorial of a negative number is not possible
+
+  const inputNum = prompt("please enter a number");
+  let fact = 1;
+
+  if(inputNum < 0){
+    console.log("factorial of",inputNum,"is not possible");
+  }else{
+
+  for(let i = 1; i <= inputNum; i++){
+    fact *= i;
+  }
+
+  console.log("factorial of input number = " , fact);
+
+  }
+
+
+</script>

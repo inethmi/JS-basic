@@ -1,0 +1,27 @@
+<script>
+  let result;
+  let inputNum = prompt("enter a number");
+
+  function isPrime(num){
+  if(num <= 1){
+    console.log(num,"is not a prime number");
+  }else{
+
+    for(let i = 2; i <= Math.sqrt(num); i++){
+      if(num % i === 0){
+        console.log(num , "is not a prime"); //if a number has a divisor larger than its square root, it must also have a corresponding divisor smaller than its square root.By checking divisors only up to the square root, we cover all possible cases where a divisor could exist.
+
+
+
+      }
+
+    }
+
+    console.log(num , "is a prime number");
+
+   }
+  }
+
+     isPrime(inputNum); 
+
+</script>

@@ -1,0 +1,41 @@
+<script>
+  //using a loop to find minimum and maximum number of a given array
+
+  const numArr = [2,5,6,5,9,10]; //array of numbers given to find max and min element in it
+
+  function findMinMax(arr){
+    let min = arr[0]; //the first element of the given array is assigned to the variable we created to store min value
+    let max = arr[0]; // doing the same thing for the variable we created to store the max value
+
+    for(let i = 0; i < arr.length; i++){ //now we are using a loop to get the elements in the array one by one to check whether it is greater or less than the values in the max and min variables respectively
+      if(arr[i] > max){
+        max = arr[i]; // if the looped array element is greatr than the value in max variable, now the vale in max variable gonna change as the value of  that looped array element.
+      }else if(arr[i] < min){
+        min = arr[i];
+      }
+    }
+
+    console.log("maximum value : " , max); //dsiplaying max and min value on the console
+    console.log("minimum value : " , min);
+  }
+
+  findMinMax(numArr); // calling the function we created
+
+
+
+
+  //using math.max and math.min functions
+  
+  const arrNum = [8,56,43,23,10,34,2];
+
+  function findMinMax2(arr){
+    let max = Math.max(...arr);
+    let min = Math.min(...arr);
+
+    console.log("maximum : " , max);
+    console.log("minimum : " , min);
+  }
+
+  findMinMax2(arrNum);
+
+</script>

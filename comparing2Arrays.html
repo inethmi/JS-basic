@@ -1,0 +1,35 @@
+<script>
+  //comparing 2 arrays that they are equal or not
+  //we are using every()
+
+
+//The every() method executes a function for each array element.
+
+//The every() method returns true if the function returns true for all elements.
+
+//The every() method returns false if the function returns false for one element.
+
+//The every() method does not execute the function for empty elements.
+
+//The every() method does not change the original array
+
+
+ // Creating two arrays, arr1 and arr2, both containing string elements '1', '2', and '3'.
+const arr1 = ['1','2','3'];
+const arr2 = ['1','2','3'];
+
+
+ // Checking if the length of arr1 is equal to the length of arr2.
+if(arr1.length == arr2.length){
+  console.log(arr1.every(checkingElements));// Using the every() method to check if every element in arr1 satisfies the condition specified by the checkingElements function.
+
+  //If the lengths are not equal, it skips the element-wise comparison because arrays of different lengths cannot be equal. This helps optimize the code by avoiding unnecessary and potentially time-consuming operations when it's already known that the arrays are not of the same length
+
+}
+
+function checkingElements(element , index){ 
+  return element == arr2[index];// Comparing the current element of arr1 with the corresponding element of arr2 at the same index.
+}
+
+
+</script>

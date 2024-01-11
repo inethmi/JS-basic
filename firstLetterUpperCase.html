@@ -1,0 +1,18 @@
+<script>
+  let word = prompt("enter a string value");
+
+  word = word.charAt(0).toUpperCase() + word.slice(1); //Capitalize the first letter of the string and concatenate it with the rest of the string.
+
+  console.log(word);
+
+
+  
+  //The charAt() method returns the character at a specified index (position) in a string. in here charAt(0) returns the first character of the string. 
+
+  //The toLocaleUpperCase() method converts a string to uppercase letters, using current locale.The locale is based on the language settings of the browser. in here the returned character from the charAt(0) method is converted into upercase. 
+
+  //The slice() method extracts a part of a string.The slice() method returns the extracted part in a new string.in here we used slice(1) method which means slice the part from position 1 to end. that means the part of user input string without the very first letter.
+
+  //we extracted the very first method and converts it into uppercase and then we extracts the rest of the string by using slice() method. so now only thing we have to do is concatanate those 2 parts. for that we can use string concatanation. (+)
+  
+</script>

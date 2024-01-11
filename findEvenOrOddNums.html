@@ -1,0 +1,18 @@
+<script>
+  const num = [2,4,3,6,12,23,24,27,13];
+  console.log("even numbers : ",num.filter(evenNums)); //creates a new array with elements which pass the function 'evenNums'.
+  console.log("odd numbers : ",num.filter(oddNums)); 
+//creates a new array with elements which pass the function 'oddNums'.
+  function evenNums(num){
+    if(num%2 === 0){
+      return num;
+    }
+
+  }
+
+  function oddNums(num){
+    if(num%2 === 1){
+      return num;
+    }
+  }
+</script>

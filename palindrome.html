@@ -1,0 +1,17 @@
+<script>
+  //what is a palindrome?
+  //a word,verse,sentence or a number that reads the same forward or backward
+
+  inputWord = prompt("enter a word");
+  inputWord = inputWord.toLowerCase();
+  reverse_word = inputWord.split("").reverse().join(""); //in here first we split the word input by the user and then reverse it and after that we rejoin the split letters. make sure to inser double quotation marks without space inside the join function.
+
+  console.log("input word : " , inputWord);
+  console.log("reverese word : " , reverse_word);
+
+  if(reverse_word === inputWord){
+    console.log("it's a palindrome");
+  }else{
+    console.log("it's not a palindrome");
+  }
+</script>

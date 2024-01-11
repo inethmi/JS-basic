@@ -1,0 +1,54 @@
+<script>
+  //how to find duplicate elements in a array
+  
+  //method 1
+  const arrNum = [1,2,3,4,2,3,1,3];
+  let seen = {}; //This initializes an empty object to keep track of unique elements.
+  console.log(arrNum.filter(duplicates)); //The filter() method creates a new array filled with elements that pass a test provided by a function.
+
+  function duplicates(num){
+    if(seen[num]){
+      return num //if the argument pass from the array as the parameter 'num' is already a key in the 'seen' object, that means it has been encountered before,and its returned as a element in the newly created array
+    }else{
+      seen[num] = true; //if not it is added to 'seen' with the value true to indicate that it has been seen
+    }
+  } 
+
+
+
+  //method 2
+  const arrNum2 = [1,2,3,5,5,4,3,2,3,2,1];
+  let seen2 = {};
+  let duplicate = [];
+
+  for(let i = 0; i < arrNum2.length; i++){
+    if(seen2[arrNum2[i]]){
+      duplicate.push(arrNum2[i]);
+    }
+    else{
+      seen2[arrNum2[i]] = true;
+    }
+  }
+
+  console.log(duplicate)
+
+  let keys = Object.keys(seen2);
+  console.log("list of numbers without duplicates : " , keys);// order of keys in the array is not guaranteed to be the same as the order in which they were added to the object.If you need a specific order, you might want to sort the keys before displaying them.
+
+
+
+
+
+
+  
+  /*difference between filter() and find() method
+
+    The filter() method creates a new array filled with elements that pass a test provided by a function.
+
+    The find() method returns the value of the first element that passes a test.
+
+  */
+
+</script>
+
+

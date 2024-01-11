@@ -1,0 +1,27 @@
+<script>
+  //find second largest value from an array and remove the largest value
+
+//find the largest value
+//find index of the largest value
+//delete that index from the array using splice method
+//thenafter apply the same logic to find largest value
+
+const arrNum = [2,3,5,10,23];
+
+function findingMaxandRemoveIt(arr){
+  let max = Math.max(...arr);
+  let index = arr.indexOf(max);
+  arr.splice(index , 1);
+
+  console.log("max : " , max);
+  console.log("index of largest : " , index);
+  console.log(arr);
+  max = Math.max(...arr);
+  console.log("second largest : " , max);
+
+
+}
+
+findingMaxandRemoveIt(arrNum);
+
+</script>
